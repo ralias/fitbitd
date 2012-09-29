@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+
+  fitbitd - a FitBit synchronisation daemon
+
+  Copyright (C) 2012 Paul Burton <paulburton89@gmail.com>
+
+--------------------------------------------------------------------------------
+
+fitbitd makes it possible to synchronise your FitBit tracker(s) on Linux and
+other platforms. It aims to be simple to use, such that you can simply start it
+and forget about it.
+
+You should run fitbitd as a non-root user, but your user will require read &
+write permissions for the USB device node of the fitbit base station. You can
+provide these easily by using a udev rule such as 51-fitbit.rules copied to the
+appropriate directory (eg. /etc/udev/rules.d/).
+
+--------------------------------------------------------------------------------
+
+Thanks to Kyle Machulis <kyle@nonpolynomial.com> for libfitbit, which helped
+greatly in understanding the fitbit protocol.
+
+https://github.com/qdot/libfitbit
+
+--------------------------------------------------------------------------------
+
+TODO:
+  - prefs/config file reading
+  - create an indicator
